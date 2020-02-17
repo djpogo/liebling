@@ -13,7 +13,7 @@ This header template is shared across all the pages.
     </button>
     {{#if @site.logo}}
       <a href="{{@site.url}}" class="m-logo in-mobile-topbar">
-        <img src="{{@site.logo}}" alt="{{@site.title}}">
+        <img src="{{@site.logo}}" alt="{{@site.title}}" loading="lazy">
       </a>
     {{else}}
       <a href="{{@site.url}}" class="m-site-name in-mobile-topbar">
@@ -37,7 +37,7 @@ This header template is shared across all the pages.
               {{#if @site.logo}}
                 <li class="only-desktop" role="menuitem">
                   <a href="{{@site.url}}" class="m-logo">
-                    <img src="{{@site.logo}}" alt="{{@site.title}}">
+                    <img src="{{@site.logo}}" alt="{{@site.title}}" loading="lazy">
                   </a>
                 </li>
                 {{else}}

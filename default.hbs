@@ -15,11 +15,8 @@
       /* This font-face is here to make icons work if the Ghost instance is installed in a subdirectory */
       @font-face {
         font-family: 'icomoon';
-        src: url("{{asset 'fonts/icomoon.eot?jcg9f9'}}");
-        src: url("{{asset 'fonts/icomoon.eot?jcg9f9#iefix'}}") format('embedded-opentype'),
-        url("{{asset 'fonts/icomoon.ttf?jcg9f9'}}") format('truetype'),
-        url("{{asset 'fonts/icomoon.woff?jcg9f9'}}") format('woff'),
-        url("{{asset 'fonts/icomoon.svg?jcg9f9#icomoon'}}") format('svg');
+        src: url("{{asset 'fonts/icomoon.woff2?jcg9f9'}}") format('woff2'),
+          url("{{asset 'fonts/icomoon.woff?jcg9f9'}}") format('woff');
         font-weight: normal;
         font-style: normal;
         font-display: swap;
@@ -38,22 +35,6 @@
     <script>
       // @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&dn=expat.txt Expat
       const ghostHost = "{{@site.url}}"
-      // @license-end
-    </script>
-
-    {{!-- This script loads the Google font asynchronously --}}
-    <script>
-      // @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&dn=expat.txt Expat
-      WebFontConfig = {
-        google: { families: ['Source+Sans+Pro:400,600,700&display=swap'] }
-      };
-
-      (function (d) {
-        var wf = d.createElement('script'), s = d.scripts[0];
-        wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js';
-        wf.async = true;
-        s.parentNode.insertBefore(wf, s);
-      })(document);
       // @license-end
     </script>
   </head>
