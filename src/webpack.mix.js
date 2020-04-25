@@ -30,6 +30,7 @@ mix.js('js/helpers.js', 'js/')
   })
   .copy('sass/fonts/icomoon/*.*', '../assets/fonts/')
   .copy('sass/fonts/source-sans-pro/*.*', '../assets/fonts/')
+  .copy('js/vendor/content-api.min.js', '../assets/js/vendor/')
   .browserSync({
     proxy: "localhost:2368",
     files: [
